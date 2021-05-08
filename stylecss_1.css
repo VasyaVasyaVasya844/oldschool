@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.grid * {
+    border: 1px solid  rgb(0, 0, 0);
+    /* padding: 3px; */
+    text-align: center;
+    background-color: #fff;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 12.6% 1fr 12.6%;
+    grid-template-rows: 8% 1fr 11%;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside footer footer";
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 12.6% 1fr 1fr 2fr 1fr;
+    grid-template-rows: minmax(auto, auto)1fr;
+    /* grid-gap: 3px; */
+    
+}
+
+/* .grid>div:nth-child(1) {
+    background-color: brown;
+} */
+
+#box1 {
+    background-color: brown;
+    grid-column: 2;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+
+
+#first{
+    background-color: #333;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 50px;
+    /*box-shadow: 7px 7px 5px rgba(0,0,0,0.6);*/
+    /*margin-top: 0px;*/
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    /*margin-left: 12.6%;*/
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /*background-color: #f1f1f1;*/
+    overflow:auto;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(221, 221, 221, 0.959);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgba(221, 221, 221, 0.274);}
+
+.header_1 {
+    margin-left: 10%;
+    color: #ddd;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 115%;
+    text-decoration: none;
+}
+
+#GlobalSearch_1 {
+    width: 25%;
+    font-size: 100%;
+    color: black;
+}
+
+#dropdtn {
+    margin-left: 12.6%;
+}
+
+#map_png {
+    background-image: url(img/maptambov.png);
+    opacity: 0.6;
+    width: 100%; /* Ширина слоя */
+    height: 300px; /* Высота слоя */
+   }
+   #map_png a {
+    display: block; /* Ссылка как блочный элемент */
+    text-align: center; /* Выравнивание по центру */
+    height: 100%; /* Высота на весь слой */
+    color: #666; /* Цвет ссылки */
+   }
+
